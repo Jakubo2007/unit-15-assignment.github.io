@@ -79,6 +79,7 @@
         </div>
     </header>
 
+
     <!-- Main Content -->
     <main id="home">
         <!-- Hero Section -->
@@ -90,6 +91,7 @@
                 </div>
             </div>
         </section>
+
 
         <!-- Services Section -->
         <section class="py-12 bg-amber-50">
@@ -146,6 +148,7 @@
             </div>
         </section>
 
+
         <!-- Courses Section -->
         <section class="py-12 bg-white">
             <div class="container mx-auto px-4">
@@ -179,28 +182,27 @@
                         </ul>
                     </div>
                    
-                    <a href="https://www.learningpeople.com/uk/become-a-job-ready-front-end-web-developer/?utm_term=web%20development%20course&utm_medium=cpc&utm_source=google&campaign_id=21985558242&utm_campaign=CODEEnrolmentsTargetingTest-WebDesign/Development(CI4)(E)(AllDevice)(%C2%A360)&gad_source=1&gad_campaignid=21985558242&gbraid=0AAAAADqCNBks1fZR21DInTKvQarsjjx9X&gclid=CjwKCAjwz_bABhAGEiwAm-P8YaGFef0iOxMgsNkHyhZGsmh1AoZoWA6VA4kx2g1tmETrs_KGKEWCUhoC5WsQAvD_BwE" 
-                       class="inline-block bg-amber-900 hover:bg-amber-800 text-white font-medium py-3 px-6 rounded-lg transition duration-300"
-                       id="explore-courses-link">
+                    <a href="https://digitalmarketinginstitute.com/" target="_blank" class="inline-block bg-amber-900 hover:bg-amber-800 text-white font-medium py-3 px-6 rounded-lg transition duration-300">
                         Explore Our Courses <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                 </div>
             </div>
         </section>
 
+
         <!-- Privacy Policy Section (hidden by default) -->
         <section id="privacy-policy" class="hidden py-12 bg-white">
             <div class="container mx-auto px-4">
                 <div class="privacy-content bg-amber-50 rounded-lg p-8 shadow-md">
                     <h2 class="text-3xl font-bold text-amber-900 mb-6 text-center">Privacy Policy</h2>
-                    
+                   
                     <div class="privacy-section">
                         <h3 class="text-xl font-semibold text-amber-900 mb-2">1. Introduction</h3>
                         <p class="text-gray-700 mb-4">
                             Hot Beans ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
                         </p>
                     </div>
-                    
+                   
                     <div class="privacy-section">
                         <h3 class="text-xl font-semibold text-amber-900 mb-2">2. Information We Collect</h3>
                         <p class="text-gray-700 mb-2">We may collect the following types of information:</p>
@@ -210,7 +212,7 @@
                             <li class="text-gray-700"><strong>Cookies:</strong> We use cookies to enhance your experience and analyze site usage.</li>
                         </ul>
                     </div>
-                    
+                   
                     <div class="privacy-section">
                         <h3 class="text-xl font-semibold text-amber-900 mb-2">3. How We Use Your Information</h3>
                         <p class="text-gray-700 mb-2">We may use the information we collect for various purposes, including:</p>
@@ -224,14 +226,14 @@
                             <li class="text-gray-700">To detect, prevent, and address technical issues</li>
                         </ul>
                     </div>
-                    
+                   
                     <div class="privacy-section">
                         <h3 class="text-xl font-semibold text-amber-900 mb-2">4. Data Security</h3>
                         <p class="text-gray-700 mb-4">
                             We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, alteration, disclosure, or destruction. However, no internet transmission or electronic storage is completely secure, so we cannot guarantee absolute security.
                         </p>
                     </div>
-                    
+                   
                     <div class="privacy-section">
                         <h3 class="text-xl font-semibold text-amber-900 mb-2">5. Your Data Protection Rights</h3>
                         <p class="text-gray-700 mb-2">Depending on your location, you may have the following rights regarding your personal data:</p>
@@ -244,14 +246,14 @@
                             <li class="text-gray-700">The right to withdraw consent</li>
                         </ul>
                     </div>
-                    
+                   
                     <div class="privacy-section">
                         <h3 class="text-xl font-semibold text-amber-900 mb-2">6. Changes to This Privacy Policy</h3>
                         <p class="text-gray-700 mb-4">
                             We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. You are advised to review this Privacy Policy periodically for any changes.
                         </p>
                     </div>
-                    
+                   
                     <div class="privacy-section">
                         <h3 class="text-xl font-semibold text-amber-900 mb-2">7. Contact Us</h3>
                         <p class="text-gray-700">
@@ -263,7 +265,7 @@
                             <li class="text-gray-700">By phone: +44 1234 567890</li>
                         </ul>
                     </div>
-                    
+                   
                     <div class="mt-8 text-center">
                         <p class="text-gray-700 text-sm">
                             <strong>Last Updated:</strong> January 1, 2023
@@ -273,6 +275,7 @@
             </div>
         </section>
     </main>
+
 
     <!-- Footer -->
     <footer class="bg-amber-900 text-white py-8">
@@ -305,6 +308,7 @@
         </div>
     </footer>
 
+
     <script>
         // Mobile menu toggle
         document.getElementById('mobile-menu-button').addEventListener('click', function() {
@@ -312,47 +316,42 @@
             menu.classList.toggle('hidden');
         });
 
+
         // Privacy policy toggle
         document.getElementById('privacy-link').addEventListener('click', function(e) {
             e.preventDefault();
-            
+           
             // Hide all sections
             document.querySelectorAll('main > section').forEach(section => {
                 section.classList.add('hidden');
             });
-            
+           
             // Show privacy policy
             document.getElementById('privacy-policy').classList.remove('hidden');
-            
+           
             // Scroll to top
             window.scrollTo(0, 0);
         });
+
 
         // Home link functionality
         document.querySelectorAll('a[href="#home"]').forEach(link => {
             link.addEventListener('click', function(e) {
                 e.preventDefault();
-                
+               
                 // Hide all sections
                 document.querySelectorAll('main > section').forEach(section => {
                     section.classList.add('hidden');
                 });
-                
+               
                 // Show home sections
                 document.querySelectorAll('main > section:not(#privacy-policy)').forEach(section => {
                     section.classList.remove('hidden');
                 });
-                
+               
                 // Scroll to top
                 window.scrollTo(0, 0);
             });
-        });
-
-        // Course link confirmation
-        document.getElementById('explore-courses-link').addEventListener('click', function(e) {
-            if(!confirm('You are being redirected to our partner course provider. Continue?')) {
-                e.preventDefault();
-            }
         });
     </script>
 </body>
