@@ -179,7 +179,9 @@
                         </ul>
                     </div>
                    
-                    <a href="courses.html" class="inline-block bg-amber-900 hover:bg-amber-800 text-white font-medium py-3 px-6 rounded-lg transition duration-300">
+                    <a href="https://www.learningpeople.com/uk/become-a-job-ready-front-end-web-developer/?utm_term=web%20development%20course&utm_medium=cpc&utm_source=google&campaign_id=21985558242&utm_campaign=CODEEnrolmentsTargetingTest-WebDesign/Development(CI4)(E)(AllDevice)(%C2%A360)&gad_source=1&gad_campaignid=21985558242&gbraid=0AAAAADqCNBks1fZR21DInTKvQarsjjx9X&gclid=CjwKCAjwz_bABhAGEiwAm-P8YaGFef0iOxMgsNkHyhZGsmh1AoZoWA6VA4kx2g1tmETrs_KGKEWCUhoC5WsQAvD_BwE" 
+                       class="inline-block bg-amber-900 hover:bg-amber-800 text-white font-medium py-3 px-6 rounded-lg transition duration-300"
+                       id="explore-courses-link">
                         Explore Our Courses <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                 </div>
@@ -344,6 +346,13 @@
                 // Scroll to top
                 window.scrollTo(0, 0);
             });
+        });
+
+        // Course link confirmation
+        document.getElementById('explore-courses-link').addEventListener('click', function(e) {
+            if(!confirm('You are being redirected to our partner course provider. Continue?')) {
+                e.preventDefault();
+            }
         });
     </script>
 </body>
