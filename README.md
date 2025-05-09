@@ -4,3 +4,4 @@ I have created a wireframe design as a plan for the design of the website. I hav
 
 ![wireframe before](https://github.com/Jakubo2007/unit-15-assignment/blob/main/wireframe.png?raw=true)
 
+![email review](https://github.com/Jakubo2007/unit-15-assignment/blob/main/Screenshot%202025-05-09%20092605.png?raw=true)
