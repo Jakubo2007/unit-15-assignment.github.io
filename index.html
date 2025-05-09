@@ -44,6 +44,20 @@
         .privacy-section {
             margin-bottom: 2rem;
         }
+        .team-member-card {
+            transition: all 0.3s ease;
+        }
+        .team-member-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(139, 69, 19, 0.1);
+        }
+        .team-image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #8B4513;
+        }
     </style>
 </head>
 <body class="bg-white">
@@ -59,7 +73,7 @@
             <!-- Navigation Links -->
             <nav class="hidden md:flex space-x-8">
                 <a href="#home" class="nav-link text-amber-900 font-medium">Home</a>
-                <a href="our-team.html" class="nav-link text-amber-900 font-medium">Our Team</a>
+                <a href="#our-team" class="nav-link text-amber-900 font-medium">Our Team</a>
                 <a href="job-description.html" class="nav-link text-amber-900 font-medium">Job Description</a>
                 <a href="form-applications.html" class="nav-link text-amber-900 font-medium">Form Applications</a>
             </nav>
@@ -73,12 +87,11 @@
         <!-- Mobile Menu -->
         <div class="md:hidden hidden bg-white py-2 px-4 shadow-md" id="mobile-menu">
             <a href="#home" class="block py-2 text-amber-900 font-medium">Home</a>
-            <a href="our-team.html" class="block py-2 text-amber-900 font-medium">Our Team</a>
+            <a href="#our-team" class="block py-2 text-amber-900 font-medium">Our Team</a>
             <a href="job-description.html" class="block py-2 text-amber-900 font-medium">Job Description</a>
             <a href="form-applications.html" class="block py-2 text-amber-900 font-medium">Form Applications</a>
         </div>
     </header>
-
 
     <!-- Main Content -->
     <main id="home">
@@ -91,7 +104,6 @@
                 </div>
             </div>
         </section>
-
 
         <!-- Services Section -->
         <section class="py-12 bg-amber-50">
@@ -148,7 +160,6 @@
             </div>
         </section>
 
-
         <!-- Courses Section -->
         <section class="py-12 bg-white">
             <div class="container mx-auto px-4">
@@ -189,6 +200,58 @@
             </div>
         </section>
 
+        <!-- Our Team Section (hidden by default) -->
+        <section id="our-team" class="hidden py-12 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-amber-900 mb-12">Meet Our Team</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Team Member 1 -->
+                    <div class="team-member-card bg-white p-8 rounded-lg shadow-md">
+                        <div class="flex flex-col items-center mb-6">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="David Johnson" class="team-image mb-4">
+                            <h3 class="text-2xl font-bold text-amber-900">David Johnson</h3>
+                            <p class="text-gray-600">Senior Frontend Developer</p>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="text-lg font-semibold text-amber-900 mb-2">About David:</h4>
+                            <p class="text-gray-700">David specializes in creating beautiful, responsive user interfaces with React and Vue.js. With over 8 years of experience, he's passionate about creating accessible web experiences.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold text-amber-900 mb-2">His Philosophy:</h4>
+                            <blockquote class="text-gray-700 italic pl-4 border-l-4 border-amber-200">
+                                "Great web development is about more than just code - it's about creating experiences that users love. Every pixel and interaction matters in crafting something truly special."
+                            </blockquote>
+                        </div>
+                    </div>
+                    
+                    <!-- Team Member 2 -->
+                    <div class="team-member-card bg-white p-8 rounded-lg shadow-md">
+                        <div class="flex flex-col items-center mb-6">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Michael Chen" class="team-image mb-4">
+                            <h3 class="text-2xl font-bold text-amber-900">Michael Chen</h3>
+                            <p class="text-gray-600">Backend Systems Architect</p>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="text-lg font-semibold text-amber-900 mb-2">About Michael:</h4>
+                            <p class="text-gray-700">Michael builds robust, scalable backend systems using Node.js, Python, and various database technologies. He's particularly skilled at optimizing performance and security.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold text-amber-900 mb-2">His Approach:</h4>
+                            <blockquote class="text-gray-700 italic pl-4 border-l-4 border-amber-200">
+                                "The best backend systems are invisible to users but enable everything they love about an application. My goal is to build infrastructure that's as reliable as it is powerful."
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-12 text-center">
+                    <p class="text-gray-700 max-w-2xl mx-auto">
+                        Our team of passionate web developers brings together diverse skills and perspectives to create exceptional digital experiences. We're constantly learning and growing to stay at the forefront of web technology.
+                    </p>
+                </div>
+            </div>
+        </section>
 
         <!-- Privacy Policy Section (hidden by default) -->
         <section id="privacy-policy" class="hidden py-12 bg-white">
@@ -276,7 +339,6 @@
         </section>
     </main>
 
-
     <!-- Footer -->
     <footer class="bg-amber-900 text-white py-8">
         <div class="container mx-auto px-4">
@@ -308,14 +370,12 @@
         </div>
     </footer>
 
-
     <script>
         // Mobile menu toggle
         document.getElementById('mobile-menu-button').addEventListener('click', function() {
             const menu = document.getElementById('mobile-menu');
             menu.classList.toggle('hidden');
         });
-
 
         // Privacy policy toggle
         document.getElementById('privacy-link').addEventListener('click', function(e) {
@@ -333,7 +393,6 @@
             window.scrollTo(0, 0);
         });
 
-
         // Home link functionality
         document.querySelectorAll('a[href="#home"]').forEach(link => {
             link.addEventListener('click', function(e) {
@@ -345,9 +404,27 @@
                 });
                
                 // Show home sections
-                document.querySelectorAll('main > section:not(#privacy-policy)').forEach(section => {
+                document.querySelectorAll('main > section:not(#privacy-policy):not(#our-team)').forEach(section => {
                     section.classList.remove('hidden');
                 });
+               
+                // Scroll to top
+                window.scrollTo(0, 0);
+            });
+        });
+
+        // Our Team link functionality
+        document.querySelectorAll('a[href="#our-team"]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+               
+                // Hide all sections
+                document.querySelectorAll('main > section').forEach(section => {
+                    section.classList.add('hidden');
+                });
+               
+                // Show our team section
+                document.getElementById('our-team').classList.remove('hidden');
                
                 // Scroll to top
                 window.scrollTo(0, 0);
