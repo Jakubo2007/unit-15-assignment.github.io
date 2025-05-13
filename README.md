@@ -5,3 +5,7 @@ I have created a wireframe design as a plan for the design of the website. I hav
 ![wireframe before](https://github.com/Jakubo2007/unit-15-assignment/blob/main/wireframe.png?raw=true)
 
 ![email review](https://github.com/Jakubo2007/unit-15-assignment/blob/main/Screenshot%202025-05-09%20092605.png?raw=true)
+
+After getting a review from my friend, I have added some changes he gave me to improve on my design and I also did some changes of my own to create a better looking web page overall.
+
+![second wireframe](https://github.com/Jakubo2007/unit-15-assignment.github.io/blob/main/school.png?raw=true)
