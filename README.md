@@ -14,6 +14,8 @@ I have also made a flow chart to add to my design plan so I can see how the user
 
 ![flowchart](https://github.com/Jakubo2007/unit-15-assignment.github.io/blob/main/Untitled%20Diagram.jpg?raw=true)
 
+After completing my website to meet the user requirenments and using my design plan on how to make the website I will now test the website for functionality, compatibility and usability. 
+
 
 
 
