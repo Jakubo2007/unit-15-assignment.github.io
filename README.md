@@ -10,6 +10,10 @@ After getting a review from my friend, I have added some changes he gave me to i
 
 ![second wireframe](https://github.com/Jakubo2007/unit-15-assignment.github.io/blob/main/school.png?raw=true)
 
+I have also made a flow chart to add to my design plan so I can see how the user would navigate around the website.
+
+![flowchart](https://github.com/Jakubo2007/unit-15-assignment.github.io/blob/main/Untitled%20Diagram.jpg?raw=true)
+
 
 
 
